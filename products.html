@@ -1,155 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NJGQ2JJW');</script>
-<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NatureBloom Organics - Products</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Our Organic Skincare Products | NatureBloom Organics</title>
+    <meta name="description" content="Browse NatureBloom Organics' full range of vegan, natural, and organic skincare products including serums, moisturizers, and cleansers.">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #fdfaf6; /* Light cream background */
-            color: #333;
-        }
-        .btn-primary {
-            background-color: #6b8e23; /* Olive green */
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            transition: background-color 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #557a1b; /* Darker olive green */
-        }
-        .nav-link {
-            color: #6b8e23;
-            transition: color 0.3s ease;
-        }
-        .nav-link:hover {
-            color: #557a1b;
-        }
-        .product-card {
-            background-color: white;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-        }
+        /* Basic inline CSS for demonstration */
+        body { font-family: sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
+        nav { background: #e0ffe0; padding: 10px; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
+        .container { max-width: 960px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .product-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+        .product-item { border: 1px solid #ddd; padding: 15px; text-align: center; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); }
+        .product-item img { max-width: 100%; height: auto; border-radius: 5px; }
+        .buy-button { background-color: #4CAF50; color: white; padding: 8px 15px; text-align: center; text-decoration: none; display: inline-block; border-radius: 4px; margin-top: 10px; }
     </style>
-</head>
-<body class="flex flex-col min-h-screen">
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJGQ2JJW"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <!-- Header -->
-    <header class="bg-white shadow-sm py-4 px-6 md:px-10 lg:px-16 flex justify-between items-center rounded-b-lg">
-        <div class="text-2xl font-bold text-green-700">
-            NatureBloom Organics
-        </div>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="products.html" class="nav-link font-semibold">Products</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    </head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
 
-    <!-- Main Content -->
-    <main class="flex-grow py-16 px-6 md:px-10 lg:px-16">
-        <h1 class="text-5xl font-extrabold text-center text-green-800 mb-12">
-            Our Pure & Potent Skincare Range
-        </h1>
+    <div class="container">
+        <h1>Explore NatureBloom's Organic Skincare Collection</h1>
+        <p>From nourishing moisturizers to refreshing cleansers, discover our full range of **vegan skincare India** products crafted with the purest ingredients.</p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Product Card 1 -->
-            <div class="product-card p-6 flex flex-col items-center text-center">
-                <img src="https://placehold.co/300x300/f0fdf4/16a34a?text=Face+Serum" alt="Organic Face Serum" class="w-48 h-48 object-cover rounded-full mb-6 border-4 border-green-200">
-                <h2 class="text-2xl font-bold text-green-700 mb-2">Radiant Glow Face Serum</h2>
-                <p class="text-gray-600 mb-4 flex-grow">
-                    A nourishing blend of organic rosehip oil, vitamin C, and hyaluronic acid to hydrate and brighten your complexion.
-                </p>
-                <p class="text-xl font-semibold text-green-800 mb-4">$35.00</p>
-                <button class="btn-primary w-full max-w-xs">Add to Cart</button>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="placeholder-serum-2.jpg" alt="Organic Anti-Aging Serum">
+                <h2>Organic Anti-Aging Serum</h2>
+                <p>Combat fine lines with our potent, plant-based serum. One of our best **organic serums online**.</p>
+                <a href="#" class="buy-button">Learn More</a>
             </div>
-
-            <!-- Product Card 2 -->
-            <div class="product-card p-6 flex flex-col items-center text-center">
-                <img src="https://placehold.co/300x300/f0fdf4/16a34a?text=Moisturizer" alt="Organic Moisturizer" class="w-48 h-48 object-cover rounded-full mb-6 border-4 border-green-200">
-                <h2 class="text-2xl font-bold text-green-700 mb-2">Deep Hydration Moisturizer</h2>
-                <p class="text-gray-600 mb-4 flex-grow">
-                    Infused with organic shea butter and aloe vera, this cream provides intense, long-lasting moisture without greasiness.
-                </p>
-                <p class="text-xl font-semibold text-green-800 mb-4">$28.00</p>
-                <button class="btn-primary w-full max-w-xs">Add to Cart</button>
+            <div class="product-item">
+                <img src="placeholder-eye-cream.jpg" alt="Natural Brightening Eye Cream">
+                <h2>Natural Brightening Eye Cream</h2>
+                <p>Reduce dark circles and puffiness with this gentle, **natural beauty routine** essential.</p>
+                <a href="#" class="buy-button">Learn More</a>
             </div>
-
-            <!-- Product Card 3 -->
-            <div class="product-card p-6 flex flex-col items-center text-center">
-                <img src="https://placehold.co/300x300/f0fdf4/16a34a?text=Cleanser" alt="Organic Cleanser" class="w-48 h-48 object-cover rounded-full mb-6 border-4 border-green-200">
-                <h2 class="text-2xl font-bold text-green-700 mb-2">Gentle Purifying Cleanser</h2>
-                <p class="text-gray-600 mb-4 flex-grow">
-                    A mild, foaming cleanser with organic chamomile and green tea extracts to cleanse and soothe sensitive skin.
-                </p>
-                <p class="text-xl font-semibold text-green-800 mb-4">$22.00</p>
-                <button class="btn-primary w-full max-w-xs">Add to Cart</button>
+            <div class="product-item">
+                <img src="placeholder-face-mask.jpg" alt="Detoxifying Clay Face Mask">
+                <h2>Detoxifying Clay Face Mask</h2>
+                <p>Purify and revitalize your skin with our mineral-rich clay mask. A true **chemical-free body wash** alternative for facial detox.</p>
+                <a href="#" class="buy-button">Learn More</a>
             </div>
-
-            <!-- Product Card 4 -->
-            <div class="product-card p-6 flex flex-col items-center text-center">
-                <img src="https://placehold.co/300x300/f0fdf4/16a34a?text=Eye+Cream" alt="Organic Eye Cream" class="w-48 h-48 object-cover rounded-full mb-6 border-4 border-green-200">
-                <h2 class="text-2xl font-bold text-green-700 mb-2">Revitalizing Eye Cream</h2>
-                <p class="text-gray-600 mb-4 flex-grow">
-                    Combat dark circles and fine lines with this potent eye cream featuring organic cucumber and coffee extracts.
-                </p>
-                <p class="text-xl font-semibold text-green-800 mb-4">$30.00</p>
-                <button class="btn-primary w-full max-w-xs">Add to Cart</button>
+            <div class="product-item">
+                <img src="placeholder-spf.jpg" alt="Organic Sun Protection Cream">
+                <h2>Organic Sun Protection Cream</h2>
+                <p>Shield your skin naturally with our broad-spectrum SPF. Part of our **sustainable beauty brand** commitment.</p>
+                <a href="#" class="buy-button">Learn More</a>
             </div>
-
-            <!-- Product Card 5 -->
-            <div class="product-card p-6 flex flex-col items-center text-center">
-                <img src="https://placehold.co/300x300/f0fdf4/16a34a?text=Toner" alt="Organic Toner" class="w-48 h-48 object-cover rounded-full mb-6 border-4 border-green-200">
-                <h2 class="text-2xl font-bold text-green-700 mb-2">Balancing Floral Toner</h2>
-                <p class="text-gray-600 mb-4 flex-grow">
-                    Restore your skin's pH balance with this refreshing toner, enriched with organic rose water and witch hazel.
-                </p>
-                <p class="text-xl font-semibold text-green-800 mb-4">$20.00</p>
-                <button class="btn-primary w-full max-w-xs">Add to Cart</button>
-            </div>
-
-            <!-- Product Card 6 -->
-            <div class="product-card p-6 flex flex-col items-center text-center">
-                <img src="https://placehold.co/300x300/f0fdf4/16a34a?text=Body+Lotion" alt="Organic Body Lotion" class="w-48 h-48 object-cover rounded-full mb-6 border-4 border-green-200">
-                <h2 class="text-2xl font-bold text-green-700 mb-2">Nourishing Body Lotion</h2>
-                <p class="text-gray-600 mb-4 flex-grow">
-                    A luxurious body lotion with organic coconut oil and lavender, leaving your skin soft, smooth, and fragrant.
-                </p>
-                <p class="text-xl font-semibold text-green-800 mb-4">$25.00</p>
-                <button class="btn-primary w-full max-w-xs">Add to Cart</button>
+            <div class="product-item">
+                <img src="placeholder-lip-balm.jpg" alt="Nourishing Organic Lip Balm">
+                <h2>Nourishing Organic Lip Balm</h2>
+                <p>Keep your lips soft and healthy with our essential **cruelty-free skincare for glowing skin** addition.</p>
+                <a href="#" class="buy-button">Learn More</a>
             </div>
         </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-green-800 text-white py-8 px-6 md:px-10 lg:px-16 text-center rounded-t-lg mt-4">
-        <p>&copy; 2025 NatureBloom Organics. All rights reserved.</p>
-        <div class="flex justify-center space-x-4 mt-4">
-            <a href="#" class="hover:text-green-200">Privacy Policy</a>
-            <a href="#" class="hover:text-green-200">Terms of Service</a>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
