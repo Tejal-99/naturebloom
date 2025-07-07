@@ -1,99 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NJGQ2JJW');</script>
-<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NatureBloom Organics - Homepage</title>
-    <!-- Tailwind CSS CDN -->
+    <title>NatureBloom Organics: Pure & Natural Skincare</title>
+    <!-- Tailwind CSS CDN for modern styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Custom styles for a natural, organic feel */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #fdfaf6; /* Light cream background */
+            background-color: #f8f8f8; /* Light background */
             color: #333;
         }
-        .btn-primary {
-            background-color: #6b8e23; /* Olive green */
-            color: white;
-            padding: 0.75rem 1.5rem;
+        .header-nav {
+            background-color: #e0ffe0; /* Light green for a fresh feel */
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .nav-link {
+            color: #2e7d32; /* Darker green for links */
+            font-weight: 600;
+            padding: 0.5rem 1rem;
             border-radius: 0.5rem;
             transition: background-color 0.3s ease;
         }
-        .btn-primary:hover {
-            background-color: #557a1b; /* Darker olive green */
-        }
-        .nav-link {
-            color: #6b8e23;
-            transition: color 0.3s ease;
-        }
         .nav-link:hover {
-            color: #557a1b;
+            background-color: #c8e6c9; /* Lighter green on hover */
+        }
+        .container-section {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1000px;
+            width: 95%;
+        }
+        .product-card {
+            border: 1px solid #e0ffe0;
+            background-color: #fafffa;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Cover the area, crop if necessary */
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .btn-primary {
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        .footer-section {
+            background-color: #2e7d32; /* Dark green footer */
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+            border-radius: 1rem 1rem 0 0; /* Rounded top corners */
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #c8e6c9;
+            border-radius: 0.5rem;
+            background-color: #fafffa;
+            box-sizing: border-box; /* Include padding in width */
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
         }
     </style>
 </head>
-<body class="flex flex-col min-h-screen">
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJGQ2JJW"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <!-- Header -->
-    <header class="bg-white shadow-sm py-4 px-6 md:px-10 lg:px-16 flex justify-between items-center rounded-b-lg">
-        <div class="text-2xl font-bold text-green-700">
-            NatureBloom Organics
-        </div>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="nav-link font-semibold">Home</a></li>
-                <li><a href="products.html" class="nav-link">Products</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="header-nav">
+        <nav class="flex justify-center space-x-6">
+            <!-- Navigation links with data-page attribute for JavaScript routing -->
+            <a href="#home" class="nav-link" data-page="home-page">Home</a>
+            <a href="#products" class="nav-link" data-page="products-page">Products</a>
+            <a href="#contact" class="nav-link" data-page="contact-page">Contact Us</a>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="flex-grow">
-        <!-- Hero Section -->
-        <section class="bg-gradient-to-r from-green-100 to-lime-100 py-20 px-6 md:px-10 lg:px-16 text-center rounded-lg m-4">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-green-800 mb-4 leading-tight">
-                Embrace Nature's Touch for Radiant Skin
-            </h1>
-            <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-                Discover our exquisite range of organic skincare products, crafted with the purest ingredients for your natural beauty.
-            </p>
-            <a href="products.html" class="btn-primary inline-block text-lg font-medium shadow-md hover:shadow-lg">
-                Explore Our Products
-            </a>
-        </section>
+    <!-- Main Content for Home Page -->
+    <div id="home-page" class="container-section">
+        <h1 class="text-4xl font-bold text-center mb-6 text-green-800">Welcome to NatureBloom Organics</h1>
+        <p class="text-lg text-center mb-8 text-gray-700">
+            Discover the pure essence of nature with our handcrafted organic skincare. At NatureBloom Organics, we believe in nurturing your skin with the finest botanical ingredients, free from harsh chemicals. Experience radiant health, naturally.
+        </p>
 
-        <!-- About Us Section -->
-        <section class="py-16 px-6 md:px-10 lg:px-16 bg-white rounded-lg m-4 shadow-sm">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-4xl font-bold text-green-700 mb-8">Our Philosophy</h2>
-                <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                    At NatureBloom Organics, we believe in the power of nature to nurture your skin. We meticulously source the finest organic ingredients, free from harsh chemicals and synthetic additives, to create skincare solutions that are gentle, effective, and truly beneficial. Our commitment is to purity, sustainability, and your well-being.
-                </p>
-                <p class="text-lg text-gray-600 leading-relaxed">
-                    Every product is lovingly made, reflecting our dedication to ethical practices and environmental responsibility. Experience the difference of skincare that's good for you and good for the planet.
-                </p>
+        <h2 class="text-3xl font-semibold text-center mb-8 text-green-700">Our Featured Organic Skincare Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Featured Product 1 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x200/e0ffe0/2e7d32?text=Organic+Face+Serum" alt="Organic Hydrating Face Serum" class="product-image">
+                <h3 class="text-xl font-bold mb-2 text-green-800">Hydrating Face Serum</h3>
+                <p class="text-gray-600 mb-4">Infused with hyaluronic acid and rosehip oil for deep hydration and a youthful glow.</p>
+                <a href="#products" class="btn-primary inline-block" data-page="products-page">Learn More</a>
             </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-green-800 text-white py-8 px-6 md:px-10 lg:px-16 text-center rounded-t-lg mt-4">
-        <p>&copy; 2025 NatureBloom Organics. All rights reserved.</p>
-        <div class="flex justify-center space-x-4 mt-4">
-            <a href="#" class="hover:text-green-200">Privacy Policy</a>
-            <a href="#" class="hover:text-green-200">Terms of Service</a>
+            <!-- Featured Product 2 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x200/e0ffe0/2e7d32?text=Nourishing+Body+Lotion" alt="Nourishing Organic Body Lotion" class="product-image">
+                <h3 class="text-xl font-bold mb-2 text-green-800">Nourishing Body Lotion</h3>
+                <p class="text-gray-600 mb-4">Rich in shea butter and aloe vera, perfect for all-day moisture and silky smooth skin.</p>
+                <a href="#products" class="btn-primary inline-block" data-page="products-page">Learn More</a>
+            </div>
+            <!-- Featured Product 3 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x200/e0ffe0/2e7d32?text=Gentle+Cleanser" alt="Gentle Organic Facial Cleanser" class="product-image">
+                <h3 class="text-xl font-bold mb-2 text-green-800">Gentle Facial Cleanser</h3>
+                <p class="text-gray-600 mb-4">A mild, purifying cleanser with chamomile and green tea extracts for sensitive skin.</p>
+                <a href="#products" class="btn-primary inline-block" data-page="products-page">Learn More</a>
+            </div>
         </div>
+
+        <div class="text-center mt-12">
+            <p class="text-lg text-gray-700 mb-4">Ready to experience the NatureBloom difference?</p>
+            <a href="#contact" class="btn-primary inline-block text-xl" data-page="contact-page">Get in Touch With Us!</a>
+        </div>
+    </div>
+
+    <!-- Main Content for Products Page -->
+    <div id="products-page" class="container-section hidden">
+        <h1 class="text-4xl font-bold text-center mb-6 text-green-800">Our Organic Skincare Collection</h1>
+        <p class="text-lg text-center mb-8 text-gray-700">
+            Explore our complete range of certified organic and natural skincare products, crafted with care for every skin type.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x200/d4edda/1e5c21?text=Vitamin+C+Serum" alt="Organic Vitamin C Serum" class="product-image">
+                <h3 class="text-xl font-bold mb-2 text-green-800">Revitalizing Vitamin C Serum</h3>
+                <p class="text-gray-600 mb-4">Brighten and even skin tone with this powerful antioxidant serum. Ideal for daily use.</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x200/d4edda/1e5c21?text=Night+Cream" alt="Organic Restorative Night Cream" class="product-image">
+                <h3 class="text-xl font-bold mb-2 text-green-800">Restorative Night Cream</h3>
+                <p class="text-gray-600 mb-4">Deeply repair and nourish your skin overnight with our rich, organic formula.</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x200/d4edda/1e5c21?text=Eye+Cream" alt="Organic Anti-Aging Eye Cream" class="product-image">
+                <h3 class="text-xl font-bold mb-2 text-green-800">Anti-Aging Eye Cream</h3>
+                <p class="text-gray-600 mb-4">Target fine lines and dark circles with our delicate, nourishing eye cream.</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x200/d4edda/1e5c21?text=Body+Wash" alt="Organic Gentle Body Wash" class="product-image">
+                <h3 class="text-xl font-bold mb-2 text-green-800">Gentle Organic Body Wash</h3>
+                <p class="text-gray-600 mb-4">Cleanse and refresh your skin with our sulfate-free, botanical body wash.</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x200/d4edda/1e5c21?text=Face+Mask" alt="Organic Detox Face Mask" class="product-image">
+                <h3 class="text-xl font-bold mb-2 text-green-800">Detoxifying Clay Mask</h3>
+                <p class="text-gray-600 mb-4">Purify and revitalize your complexion with our mineral-rich, organic clay mask.</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x200/d4edda/1e5c21?text=Lip+Balm" alt="Organic Hydrating Lip Balm" class="product-image">
+                <h3 class="text-xl font-bold mb-2 text-green-800">Hydrating Lip Balm</h3>
+                <p class="text-gray-600 mb-4">Keep your lips soft and smooth with our nourishing, all-natural lip balm.</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content for Contact Page -->
+    <div id="contact-page" class="container-section hidden">
+        <h1 class="text-4xl font-bold text-center mb-6 text-green-800">Get in Touch with NatureBloom Organics</h1>
+        <p class="text-lg text-center mb-8 text-gray-700">
+            We'd love to hear from you! Whether you have a question about our products, an inquiry about an order, or just want to share your NatureBloom experience, please reach out.
+        </p>
+
+        <div class="max-w-md mx-auto">
+            <form action="#" method="POST" class="bg-white p-8 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message here..." rows="5" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="text-center mt-12 text-gray-700">
+            <h2 class="text-2xl font-semibold mb-4 text-green-700">Other Ways to Connect</h2>
+            <p class="mb-2"><strong>Email:</strong> <a href="mailto:info@naturebloomorganics.com" class="text-green-600 hover:underline">info@naturebloomorganics.com</a></p>
+            <p class="mb-2"><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Address:</strong> 123 Organic Lane, Green City, Earth State, 123456</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <p>&copy; 2025 NatureBloom Organics. All rights reserved.</p>
+        <p class="text-sm mt-2">Nurturing your skin, naturally.</p>
     </footer>
+
+    <script>
+        // JavaScript for simple single-page navigation
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pages = document.querySelectorAll('.container-section');
+
+            // Function to show a specific page and hide others
+            const showPage = (pageId) => {
+                pages.forEach(page => {
+                    if (page.id === pageId) {
+                        page.classList.remove('hidden');
+                    } else {
+                        page.classList.add('hidden');
+                    }
+                });
+            };
+
+            // Handle navigation clicks
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent default link behavior
+                    const targetPageId = link.dataset.page; // Get the target page ID from data-page attribute
+                    showPage(targetPageId);
+
+                    // Update URL hash without reloading
+                    history.pushState(null, '', link.getAttribute('href'));
+                });
+            });
+
+            // Handle initial page load or direct access via hash
+            const initialHash = window.location.hash.substring(1); // Remove '#'
+            const initialPageId = initialHash ? `${initialHash}-page` : 'home-page';
+
+            // Check if the initialPageId exists, otherwise default to home-page
+            if (document.getElementById(initialPageId)) {
+                showPage(initialPageId);
+            } else {
+                showPage('home-page'); // Default to home page if hash is invalid
+                history.replaceState(null, '', '#home'); // Set hash to home
+            }
+
+            // Handle back/forward button for hash changes
+            window.addEventListener('popstate', () => {
+                const hash = window.location.hash.substring(1);
+                const pageId = hash ? `${hash}-page` : 'home-page';
+                if (document.getElementById(pageId)) {
+                    showPage(pageId);
+                } else {
+                    showPage('home-page');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
