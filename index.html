@@ -10,56 +10,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NatureBloom Organics: Pure & Natural Skincare Products | Official Site</title>
-    <meta name="description" content="Discover NatureBloom Organics for pure, natural, and organic skincare products. Handcrafted with botanical ingredients for healthy, glowing skin.">
+    <meta name="description" content="NatureBloom Organics: Your source for natural, organic skincare products. Discover the power of nature for healthy, radiant skin.">
+    <title>NatureBloom Organics - Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Basic inline CSS for demonstration */
-        body { font-family: sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
-        nav { background: #e0ffe0; padding: 10px; text-align: center; }
-        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
-        .container { max-width: 960px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .featured-products { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 30px; }
-        .product-card { border: 1px solid #ddd; padding: 15px; margin: 10px; text-align: center; width: 30%; min-width: 280px; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); }
-        .product-card img { max-width: 100%; height: auto; border-radius: 5px; }
+        /* Custom font for a natural feel */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfaf6; /* Light cream background */
+            color: #333;
+        }
+        .nav-link {
+            @apply text-lg font-medium text-green-800 hover:text-green-600 transition duration-300 ease-in-out px-4 py-2 rounded-md;
+        }
+        .btn-primary {
+            @apply bg-green-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-green-600 transition duration-300 ease-in-out;
+        }
     </style>
-    </head>
-<body>
+</head>
+<body class="min-h-screen flex flex-col">
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P22NK3VC"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-
-    <div class="container">
-        <h1>Welcome to NatureBloom Organics: Your Source for Natural Skincare</h1>
-        <p>At NatureBloom Organics, we believe in the power of nature to nurture your skin. Explore our range of handcrafted, chemical-free, and **organic skincare products** designed for a healthy, radiant glow.</p>
-
-        <h2>Our Featured Organic Skincare Products</h2>
-        <div class="featured-products">
-            <div class="product-card">
-                <img src="placeholder-face-serum.jpg" alt="Organic Hydrating Face Serum for glowing skin">
-                <h3>Organic Hydrating Face Serum</h3>
-                <p>Deeply moisturizes and rejuvenates with natural botanicals. Perfect for a **natural beauty routine**.</p>
-            </div>
-            <div class="product-card">
-                <img src="placeholder-body-lotion.jpg" alt="Eco-friendly Organic Body Lotion">
-                <h3>Eco-Friendly Body Lotion</h3>
-                <p>Nourish your skin with our rich, **eco-friendly moisturizers**, leaving it soft and smooth.</p>
-            </div>
-            <div class="product-card">
-                <img src="placeholder-cleanser.jpg" alt="Gentle Organic Facial Cleanser for sensitive skin">
-                <h3>Gentle Facial Cleanser</h3>
-                <p>A mild and effective cleanser for all skin types, including **sensitive skin remedies natural** solutions.</p>
-            </div>
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-green-800 rounded-lg p-2">NatureBloom Organics</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <p style="text-align: center; margin-top: 30px;">
-            <a href="contact.html" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; border-radius: 5px;">Contact Us Today!</a>
-        </p>
-    </div>
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-12 flex flex-col items-center justify-center text-center">
+        <section class="max-w-4xl">
+            <h1 class="text-5xl font-extrabold text-green-900 mb-6 leading-tight">Embrace Nature's Touch for Radiant Skin</h1>
+            <p class="text-xl text-gray-700 mb-10">
+                At NatureBloom Organics, we believe in the pure power of nature to nourish and revitalize your skin.
+                Our handcrafted skincare products are made with the finest organic ingredients, ensuring a gentle yet effective experience.
+            </p>
+            <a href="products.html" class="btn-primary">Explore Our Products</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-6 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 NatureBloom Organics. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
